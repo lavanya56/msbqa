@@ -45,8 +45,8 @@ public class AccountSearch {
 			MSBUtils.userLogin(driver, "msbadmin@abc.com", "Msb1234");
             MSBUtils.leftMenu(driver, "//div[@id='accordian_my']/div/h4/a/span", "searchAccountsMenuAdmin");
             if(MSBUtils.isElementPresent(By.id("accountSearchButton"), driver)){
-    driver.findElement(By.id("accountName111")).clear();
-    driver.findElement(By.id("accountName111")).sendKeys("interface");
+    driver.findElement(By.id("accountName")).clear();
+    driver.findElement(By.id("accountName")).sendKeys("interface");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Vendor");
     driver.findElement(By.id("accountSearchButton")).click();
