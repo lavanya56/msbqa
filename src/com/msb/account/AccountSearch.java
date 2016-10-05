@@ -76,7 +76,7 @@ public class AccountSearch {
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("USA");
     driver.findElement(By.cssSelector("option[value=\"3\"]")).click();
-    new Select(driver.findElement(By.id("accountState"))).selectByVisibleText("California");
+     Select(driver.findElement(By.id("accountState"))).selectByVisibleText("California");
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("");
