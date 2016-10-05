@@ -205,7 +205,7 @@
         <mkdir dir="${junitAccountSearch.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="com.msb.account.AccountSearch" todir="${junit.output.dir}"/>
+            <test name="com.msb.home.EditProfile" todir="${junit.output.dir}"/>
             <classpath refid="MSB.classpath"/>
         </junit>
     </target>
