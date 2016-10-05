@@ -201,7 +201,7 @@
         </junit>
     </target>
 	
-    <target name="AccountSearch">
+    <target name="EditProfile">
         <mkdir dir="${junitAccountSearch.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
