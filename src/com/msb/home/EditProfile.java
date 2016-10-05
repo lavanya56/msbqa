@@ -50,7 +50,7 @@ public class EditProfile {
 			driver = MSBUtils.getDriver();
 			MSBUtils.userLogin(driver, "nseerapu@interfaceglobal.com", "Msb1234");
 			MSBUtils.leftMenu(driver, "//div[@id='accordian_my']/div/h4/a/span/i", "profileHomeCustAdmin");
-		if(MSBUtils.isElementPresent(By.xpath("ContactFname"), driver)){
+		if(MSBUtils.isElementPresent(By.id("ContactFname"), driver)){
 		    driver.findElement(By.xpath("//font[@value='east']")).click();
 //		    driver.findElement(By.id("imageupdate")).clear();
 		    driver.findElement(By.id("imageupdate")).sendKeys(Paths.get("").toAbsolutePath()+"\\sample\\profile.jpg");
