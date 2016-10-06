@@ -128,7 +128,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="SeleniumRun">
+    <target name="SeleniumRun" depends="sampletest">
         <java classname="com.msb.util.SeleniumRun" failonerror="true" fork="yes">
             <classpath refid="MSB.classpath"/>
         </java>
@@ -196,16 +196,16 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-			<test name="com.msb.home.EditProfile" todir="${junit.output.dir}"/>
+			<test name="com.msb.account.AccountSearch" todir="${junit.output.dir}"/>
               <classpath refid="MSB.classpath"/>
         </junit>
     </target>
 	
-    <target name="EditProfile">
+    <target name="AccountSearch">
         <mkdir dir="${junitAccountSearch.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="com.msb.home.EditProfile" todir="${junit.output.dir}"/>
+            <test name="com.msb.account.AccountSearch" todir="${junit.output.dir}"/>
             <classpath refid="MSB.classpath"/>
         </junit>
     </target>
