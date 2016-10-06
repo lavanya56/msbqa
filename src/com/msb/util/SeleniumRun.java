@@ -25,10 +25,10 @@ public class SeleniumRun {
 			JUnitCore junit = new JUnitCore();
  
 
-			junit.run(AccountSearch.class);//done
+// 			junit.run(AccountSearch.class);//done
 		    //junit.run(AddAccount.class);//done
 //			junit.run(EditAccount.class);//done	
-//			junit.run(EditProfile.class); //done 
+// 			junit.run(EditProfile.class); //done 
 //			junit.run(AssignAccount.class);//done
 //			junit.run(RequirementDashboard.class);//done
 //			junit.run(DashboardProject.class);//done
