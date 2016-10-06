@@ -58,8 +58,8 @@ public class AddAccount {
 			    driver.findElement(By.id("email_ext")).clear();
 			    String emailExt=accName+".com";
 			    System.out.println("URL------>"+emailExt);
-		        driver.findElement(By.id("email_ext")).sendKeys(emailExt);
-			    driver.findElement(By.id("address1")).clear();
+		        driver.findElement(By.cssselector("email_ext")).sendKeys(emailExt);
+			    driver.findElement(By.xpath("address1")).clear();
 			    driver.findElement(By.id("address1")).sendKeys("hatro");
 			    driver.findElement(By.id("address2")).clear();
 			    driver.findElement(By.id("address2")).sendKeys("novi");
