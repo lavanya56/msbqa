@@ -17,8 +17,6 @@ import com.msb.util.GenerateData;
 import com.msb.util.MSBUtils;
 import com.msb.util.ReportBean;
 
-
-
 public class AccountSearch {
   private WebDriver driver;
   private String baseUrl;
@@ -49,9 +47,9 @@ public class AccountSearch {
             if(MSBUtils.isElementPresent(By.id("accountSearchButton"), driver)){
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interface");
-    driver.findElement(By.Test("accountSearchButton")).click();
+    driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Vendor");
-    driver.findElement(By.test("accountSearchButton")).click();
+    driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interfaceer");
     driver.findElement(By.id("accountSearchButton")).click();
@@ -167,3 +165,4 @@ public class AccountSearch {
     }
   }
 }
+
