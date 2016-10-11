@@ -23,7 +23,9 @@ public class SeleniumRun {
 		try {
 			MSBUtils.writeLog("Start Time : " + new Date());
 			JUnitCore junit = new JUnitCore();
- 
+                        
+			
+			junit.run(AccountSearch.class);
 
 // 		
 			
