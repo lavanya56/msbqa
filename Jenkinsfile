@@ -14,7 +14,7 @@ node {
    
  //   def  mvnHome = tool 'M2_HOME'
 	  def  mvnHome = tool name:'Ant' , type: 'hudson.tasks.Ant$AntInstallation'
-	  bat "${mvnHome}/bin/ant" warfile
+	  bat (/"${mvnHome}/bin/ant" warfile/)
 //   bat(/"${mvnHome}\bin\ant" -f build.xml warfile/)
  //   sh "'${mvnHome}/bin' warfile"     bat "${mvnHome}\bin\ant" -f build.xml warfile
   }
