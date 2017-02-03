@@ -14,7 +14,7 @@ node {
    
  //   def  mvnHome = tool 'M2_HOME'
 	  def  mvnHome = tool 'Ant'
-	  bat "${mvnHome}/bin/ant"  -f build.xml warfile
+	  bat "${mvnHome}/bin/ant" -f build.xml warfile
 //   bat(/"${mvnHome}\bin\ant" -f build.xml warfile/)
  //   sh "'${mvnHome}/bin' warfile"     bat "${mvnHome}\bin\ant" -f build.xml warfile
   }
